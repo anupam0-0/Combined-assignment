@@ -1,4 +1,3 @@
-# Assignment: Payments Backend + Frontend
 
 ## Tech Stack
 
