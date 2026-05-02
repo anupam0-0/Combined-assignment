@@ -1,0 +1,34 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test-problem01": "npx jest ./tests/problem-01.spec.ts",
+    "test-problem02": "npx jest ./tests/problem-02.spec.ts",
+    "test-problem03": "npx jest ./tests/problem-03.spec.ts",
+    "test-problem04": "npx jest ./tests/problem-04.spec.ts",
+    "test-arrayone": "npx jest ./tests/arrayOne.spec.ts",
+    "test-arraytwo": "npx jest ./tests/arrayTwo.spec.ts",
+    "test-enums": "npx jest ./tests/enums.spec.ts",
+    "test-tesla": "npx jest ./tests/tesla.spec.ts",
+    "test-domain": "npx jest ./tests/domain.spec.ts",
+    "test-driving": "npx jest ./tests/driving.spec.ts",
+    "test-union": "npx jest ./tests/union.spec.ts",
+    "test-combined": "npx jest ./tests/combined.spec.ts",
+    "test-greet": "npx jest ./tests/greet.spec.ts",
+    "test-multiply": "npx jest ./tests/multiply.spec.ts",
+    "test-multipleof": "npx jest ./tests/multipleof.spec.ts",
+    "test-runlater": "npx jest ./tests/runLater.spec.ts",
+    "test-all": "npx jest ./tests/tesla.spec.ts ./tests/domain.spec.ts ./tests/driving.spec.ts ./tests/greet.spec.ts ./tests/multiply.spec.ts ./tests/multipleof.spec.ts ./tests/runLater.spec.ts ./tests/union.spec.ts ./tests/combined.spec.ts ./tests/arrayOne.spec.ts ./tests/arrayTwo.spec.ts ./tests/enums.spec.ts ./tests/problem01.spec.ts ./tests/problem02.spec.ts ./tests/problem03.spec.ts ./tests/problem04.spec.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.7.3"
+  }
+}
