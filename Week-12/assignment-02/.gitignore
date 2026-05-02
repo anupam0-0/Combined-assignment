@@ -3,3 +3,4 @@ package-lock.json
 yarn.lock
 /solution/config.ts
 .DS_Store
+config.ts

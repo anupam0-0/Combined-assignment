@@ -1,4 +1,4 @@
-import { client } from '../index';
+import { client } from "../index";
 
 export async function createTables() {
     // Creating Users table
@@ -32,5 +32,3 @@ export async function dropTables() {
         DROP TABLE IF EXISTS users CASCADE;
     `);
 }
-
-module.exports = { createTables, dropTables };

@@ -1,4 +1,4 @@
-import { client } from '../index';
+import { client } from "../index";
 
 export async function createTables() {
     // Creating Users table
@@ -31,5 +31,3 @@ export async function dropTables() {
     await client.query(`DROP TABLE IF EXISTS travel_plans;`);
     await client.query(`DROP TABLE IF EXISTS users;`);
 }
-
-module.exports = { createTables, dropTables };

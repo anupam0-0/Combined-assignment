@@ -1,2 +1,2 @@
 
-export const DB_URL = "postgres://postgres:mysecretpassword@localhost:5433/postgres";
+export const DB_URL = process.env.DATABASE_URL || process.env.DB_URL || '';

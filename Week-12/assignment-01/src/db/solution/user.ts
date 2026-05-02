@@ -1,4 +1,4 @@
-import { client } from "..";
+import { client } from "../../index";
 
 /*
  * Should insert into the users table

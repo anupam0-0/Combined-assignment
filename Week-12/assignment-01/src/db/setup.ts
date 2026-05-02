@@ -1,5 +1,5 @@
 // src/db/__tests__/setup.js
-import { client } from '../index';
+import { client } from "../index";  
 
 export async function createTables() {
     await client.query(`
@@ -26,5 +26,3 @@ export async function dropTables() {
     await client.query(`DROP TABLE IF EXISTS todos;`);
     await client.query(`DROP TABLE IF EXISTS users;`);
 }
-
-module.exports = { createTables, dropTables };

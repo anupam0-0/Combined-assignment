@@ -1,7 +1,9 @@
-import { client } from '../..';
+import { client } from '../../index';
 import { createUser, getUser } from '../user';
 import { createTables, dropTables } from '../setup';
 import { createTodo, updateTodo, getTodos } from '../todo';
+
+let userId: number;
 
 beforeAll(async () => {
     await client.connect();

@@ -34,6 +34,18 @@ export async function createTravelPlan(
   endDate: string,
   budget: number
 ) {
+  const sqlquery =
+    "insert into travel_plans (user_id, title, destination_city, destination_country, start_date, end_date, budget) values ($1, $2, $3, $4, $5, $6, $7) returning *";
+  const res = await client.query(sqlquery, [
+    userId,
+    title,
+    destinationCity,
+    destinationCountry,
+    startDate,
+    endDate,
+    budget,
+  ]);
+  return res.rows[0];
 
 }
 
@@ -46,6 +58,10 @@ export async function updateTravelPlan(
   title?: string,
   budget?: number
 ) {
+  const sqlquery =
+    "update travel_plans set title = coalesce($2, title), budget = coalesce($3, budget) where id = $1 returning *";
+  const res = await client.query(sqlquery, [planId, title, budget]);
+  return res.rows[0];
 
 }
 
@@ -63,5 +79,8 @@ export async function updateTravelPlan(
  * }]
  */
 export async function getTravelPlans(userId: number) {
+  const sqlquery = "select * from travel_plans where user_id = $1";
+  const res = await client.query(sqlquery, [userId]);
+  return res.rows;
 
 }

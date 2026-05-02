@@ -1,6 +1,6 @@
 
 
-import { client } from "..";
+import { client } from "../../index";
 import { QueryResult } from "pg";
 
 interface TODO {
@@ -9,6 +9,7 @@ interface TODO {
     description: string;
     done: boolean;
     // Additional properties if present in your database schema
+    // 
 }
 /*
  * Function should insert a new todo for this user
