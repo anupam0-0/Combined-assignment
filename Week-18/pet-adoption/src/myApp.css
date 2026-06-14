@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: #335624;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.form {
+    background-color: #c59771bd;
+    max-width: 550px;
+    margin: 20px auto;
+    padding: 30px;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
+    font-family: inherit;
+    font-weight: 800;
+    transition: transform 0.2s ease;
+}
+
+.form:hover {
+    transform: translateY(-2px);
+}
+
+div {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline-block;
+    margin: 0 10px 10px 5px;
+    width: auto;
+    cursor: pointer;
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="date"],
+input[type="file"],
+input[type="email"],
+input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #335624;
+}
+
+button {
+    padding: 12px;
+    background-color: #335624;
+    width: 100%;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: inherit;
+    margin: 20px 0 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2a461e;
+}
+
+table {
+    border: 1px solid #335624;
+    margin: 20px auto;
+    width: 65%;
+    background-color: #fff;
+    border-collapse: collapse;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+tr,
+td,
+th {
+    border: 1px solid #335624;
+    padding: 12px;
+}
+
+tr {
+    background-color: #c59771bd;
+}
+
+tr:hover {
+    background-color: #b88b66bd;
+}
+
+small {
+    color: #dc3545;
+    font-style: italic;
+    float: right;
+    margin-top: 4px;
+    font-weight: 600;
+}
